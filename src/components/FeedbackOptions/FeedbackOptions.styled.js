@@ -6,20 +6,6 @@ export const Button = styled.button`
   border-radius: 10px;
   transition: transform 250ms ease;
   :hover {
-    background-color: ${({ name }) => {
-      switch (name) {
-        case 'good':
-          return 'green';
-
-        case 'neutral':
-          return 'blue';
-
-        case 'bad':
-          return 'red';
-        default:
-          'white';
-      }
-    }};
     transform: scale(1.2);
     color: white;
   }
