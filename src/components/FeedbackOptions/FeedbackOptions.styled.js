@@ -16,6 +16,8 @@ export const Button = styled.button`
 
         case 'bad':
           return 'red';
+        default:
+          'white';
       }
     }};
     transform: scale(1.2);
