@@ -7,7 +7,6 @@ export const Button = styled.button`
   transition: transform 250ms ease;
   :hover {
     transform: scale(1.2);
-    color: white;
   }
   font-weight: 700;
 `;
