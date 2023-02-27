@@ -1,9 +1,8 @@
-import { Notification } from 'components/Notification/Notification';
 import PropTypes from 'prop-types';
 import { BadReviews, GoodReviews, NeutralReviews } from './Statistics.styled';
 
 export function Statistics({ good, neutral, bad, total, positivePercentage }) {
-  return good || neutral || bad ? (
+  return (
     <>
       <GoodReviews>Good: {good}</GoodReviews>
       <NeutralReviews>Neutral: {neutral}</NeutralReviews>
@@ -11,8 +10,6 @@ export function Statistics({ good, neutral, bad, total, positivePercentage }) {
       <p>Total: {total}</p>
       <p>Positive feedback: {positivePercentage ? positivePercentage : 0}%</p>
     </>
-  ) : (
-    <Notification message="There is no feedback"></Notification>
   );
 }
 
